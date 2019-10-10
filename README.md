@@ -3,12 +3,30 @@ mini golf bro!!!
 
 
 My game:
-The game is mini golf but like there are a ton of bouncy walls and traps for the ball to go in. It would look something like this but more complicated. It is from a birds eye view
+The game is mini golf but like there are a ton of bouncy walls and traps for the ball to go in. It would look something example.jpeg but more complicated. It is from a birds eye view
 
 The ball is shot using the mouse to click and then pull back at an angle. You only have a certain amount of balls per level and if you lose that ball during that level to one of the traps then you get a new one as long as you have more balls. There is a tracker that is at the top with a number of balls. Like so: *** if you have 3 and * if you have 1.
 If you run out of balls you lose. The goal is to get through in the fewest strokes but also not losing your ball to the traps.
 With 2 players, its trying to beat it in the fewest strokes. Players take turns in 2 player mode. It is based not on how far you are in the hole but
-Traps can be magnets that pull your ball away from the hole if it get near it or like sinkholes and
+
+Magnets are traps  that pull your ball away from the hole and makes it stick to the magnet. If it get close enough to the magnet, the magnet will take the ball.
+
+Sandtraps cause the ball to slow down almost immediately. and then the next shot you take is less powerful. Range of hitting is like 40% of the normal speed.
+
+sink holes make you lose the ball if it goes in. You then have to restart and you lose a ball.
+
+If you get a ball in the hole you move on and gain a ball up to 3 balls.
+
+levels get increasingly hard with more obstacles and traps
+
+walls are just lines but if the ball hits the wall it bounces off in an according angle. However angles work ya know? Ball loses 10% speed when it hits a wall.
+
+speed decreases gradually as the ball moves. like .5% a frame or something idk. you figure out something that makes it work and look like its moving like normal.
+
+there is a line that shows the angle of your shot when you are aiming from the ball to the first obstacle. 
+
+
+
 
 
 
