@@ -1,0 +1,29 @@
+Programming Priority
+  1. Creating golf ball and hole
+  2. Setting up walls for golf course
+  3. Programming golf movement and power when hit
+    a. golf ball speed decreasing at constant rate (unless in a trap)
+    b. determining angle at which golf ball bounces off of walls
+  4. Programming level to end when you either run out of balls or you get the ball into the hole
+    a. programming ball count
+  5. Programming different playable levels that get harder as you go on
+    a. deciding where the ball and where the hole should be placed
+    b. deciding where the traps should be placed (magnets, sinkholes, sandtraps)
+  6. Add images for all objects
+
+Everything is programmable and will be able to be finished in the 12 allotted days.
+
+12 Day Plan:
+
+Day 1 = creating golf ball and hole
+Day 2 = setting up walls for golf course
+Days 3-6 = programming golf movement and power when hit
+Day 7 = Programming level to end when you either run out of balls or you get the ball into the hole
+Days 8-11 and half of day 12 = Programming different playable levels that get harder as you go on
+Half of day 12 = add images for all objects
+
+3 extra days:
+
+Days 1-2 = add holes in the walls that the ball usually bounces off of
+  - the ball will go through the hole and have to be hit back into the course from the deep green
+Day 3 = add the option to chose the color of your ball and the flag at the finish hole
