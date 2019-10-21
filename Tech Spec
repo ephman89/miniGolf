@@ -1,0 +1,281 @@
+Sand Trap
+  -Description
+      Difficulties:
+        - deciding how quickly the ball will slow down in the sand
+        -deciding how less powerful the next shot is
+      Functions:
+        -slowDownBall() = slows down ball as it enters the sand
+        -sandShot() = slows down the next shot when stuck in the sand
+      Performance Impact:
+        -Very small, just an obstacle
+  -Dependencies
+      Libraries:
+        -image
+      Assumptions:
+        -none
+  -Priority
+    -low, not necessary to core game function
+  -Feasibility
+      Difficulty:
+        - not difficult
+      Time:
+        - no more than a class period
+      Issues:
+        -determining the precise ball slow down
+  -Data and Variables
+      Global variables:
+        -golfBall
+      Local variables:
+        -ballSlowdown
+        -sandPosition
+        -ballNextShot
+  -Relational Map
+      Other functions relation:
+        -related to ball speed
+      Where is function needed:
+        -needed when ball is rolling
+
+Sinkhole
+  -Description
+      Difficulties:
+        -deciding how big hole should be
+      Functions:
+        -eatBall() = you lose a ball to the hole
+      Performance Impact:
+        -minimal, it is just another obstacle
+  -Dependencies
+      Libraries:
+        -image
+      Assumptions:
+        -ball will fall in hole and not role over even if it is going very fast
+  -Priority
+    -very low, not necessary to core game function
+  -Feasibility
+      Difficulty:
+        -very easy, just have to program a hole for ball to fall into
+      Time:
+        -half a class period or less
+      Issues:
+        -deciding how big hole should be
+  -Data and Variables
+      Global variables:
+        -golfBall
+      Local variables:
+        -holeCircumference
+        -holePosition
+  -Relational Map
+      Other functions relation:
+        -related to amount of balls left
+      Where is function needed:
+        -when the ball is rolling
+
+Magnet
+  -Description
+      Difficulties:
+        -Defining the area away from the magnet that it will attract the ball
+      Functions:
+        - pullBall() = pulls the golf ball towards it
+      Performance Impact:
+        - Not very major, just adds another obstacle for the ball
+  -Dependencies
+      Libraries:
+        -image
+      Assumptions:
+        -The magnet will pull on the ball with different strengths depending on where the ball is in relation to the magnet
+  -Priority
+    very low. just an obstacle and not necessary to core game function
+  -Feasibility
+      Difficulty:
+        -Slightly difficult due to adjusting how hard the ball pulls on the ball depending on where the ball is
+      Time:
+        - No more than class period
+      Issues:
+        - Deciding how big the area around the magnet that pulls on the ball will be
+  -Data and Variables
+      Global variables:
+        -golfBall
+      Local variables:
+        -ballPull
+        -magnetPosition
+  -Relational Map
+      Other functions relation:
+        -related to ball movement
+      Where is function needed:
+        - needed when ball is rolling
+
+Golf Ball (Player)
+  -Description
+      Difficulties:
+        -rendering golf ball sprite
+        -creating the line that extends from the golf ball to angle your shot
+      Functions:
+        -angleShot() - angles your next shot
+        -shotPower() - decides power of your shot
+      Performance Impact:
+        - very large, performance depends on your golf sprite
+  -Dependencies
+      Libraries:
+        -image
+      Assumptions:
+        -easy to position mouse
+  -Priority
+    -most important
+    -need a player
+  -Feasibility
+      Difficulty:
+        -pretty hard
+        -need to determine power and angle of shots
+      Time:
+        -medium to high
+      Issues:
+        -calculating how to chose power and angle of shot
+        -coding line extending from golf ball
+  -Data and Variables
+      Global variables:
+      Local variables:
+        -golfBall
+        -xPosition
+        -yPosition
+        -angle
+        -power
+  -Relational Map
+      Other functions relation:
+        -used when shooting golf balls
+      Where is function needed:
+        -needed for angle and power of golf ball
+
+Ball count
+  -Description
+      Difficulties:
+        -tracking ball count
+      Functions:
+        -ballCount() = keeps track of amount of balls left
+      Performance Impact:
+        -minimal, just a counter
+  -Dependencies
+      Libraries:
+        -none
+      Assumptions:
+        -only 3 balls to start
+  -Priority
+    -low, just a counter
+  -Feasibility
+      Difficulty:
+        -easy
+      Time:
+        -ten minutes
+      Issues:
+        -resetting the counter each new level
+  -Data and Variables
+      Global variables:
+        -none
+      Local variables:
+        -ballCounter
+  -Relational Map
+      Other functions relation:
+        -determines whether is over or not
+      Where is function needed:
+        -when trying to shoot your next ball
+
+Bouncing balls
+  -Description
+      Difficulties:
+        -calculating angle of ball bouncing off wall
+      Functions:
+        -angleOfBouncer()=determines angle the ball bounces off the wall
+      Performance Impact:
+        -high, greatly impacts golf ball movement
+  -Dependencies
+      Libraries:
+        -none
+      Assumptions:
+        -ball will not lose speed when bouncing off wall
+  -Priority
+    -high, important to ball movement
+  -Feasibility
+      Difficulty:
+        -medium, need to determine angle that ball bounces off the wall
+      Time:
+        -two class periods
+      Issues:
+        -calculating angles
+  -Data and Variables
+      Global variables:
+        -golfBall
+        -wall
+      Local variables:
+        -bulletRotation
+  -Relational Map
+      Other functions relation:
+        -relates to wall and ball position
+      Where is function needed:
+        -needed when ball is moving
+
+Ball speed decreasing
+  -Description
+      Difficulties:
+        -determining how much the ball slows down as it rolls
+      Functions:
+        -ballSlowdDown()=determines how much ball slows down while rowing
+      Performance Impact:
+        -impacts how hard a level is
+  -Dependencies
+      Libraries:
+        -none
+      Assumptions:
+        -ball speed decrease is constant
+  -Priority
+  -Feasibility
+      Difficulty:
+        -not difficult, just coding one thing
+      Time:
+        -half a period
+      Issues:
+        -choosing the correct rate for ball speed to decrease
+  -Data and Variables
+      Global variables:
+        -golfBall
+      Local variables:
+        -ballSpeed
+  -Relational Map
+      Other functions relation:
+        -ball movement
+      Where is function needed:
+        -needed when ball is moving
+
+Different Levels
+  -Description
+      Difficulties:
+        -Determining how to code each level to make them harder than the last but not impossible
+      Functions:
+        -setUpWalls()= puts walls around golf course
+        -setUpTraps() = puts traps around course
+        -setUpGolfBall()=puts ball into position
+        -setUpCounter() = sets up counter
+      Performance Impact:
+        -Very high, where things are positioned determines how the game is played
+  -Dependencies
+      Libraries:
+        -none
+      Assumptions:
+        -game must be playable
+  -Priority
+    -highest, must have a level to play on
+  -Feasibility
+      Difficulty:
+        -Very high, it will take a while to code playable and fun levels
+      Time:
+        -A week of class time
+      Issues:
+        -making levels playable and fun but not too hard that it's not fun
+  -Data and Variables
+      Global variables:
+        -golfBall
+      Local variables:
+        -walls
+        -level
+  -Relational Map
+      Other functions relation:
+        -all functions relate to this part of code
+      Where is function needed:
+        -for every part of the game
