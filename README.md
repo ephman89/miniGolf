@@ -5,11 +5,14 @@ mini golf bro!!!
 My game:
 The game is mini golf but like there are a ton of bouncy walls and traps for the ball to go in. It would look something example.jpeg but more complicated. It is from a birds eye view
 
-The ball is shot using the mouse to click and then pull back at an angle. You only have a certain amount of balls per level and if you lose that ball during that level to one of the traps then you get a new one as long as you have more balls. There is a tracker that is at the top with a number of balls. Like so: *** if you have 3 and * if you have 1.
+The ball is shot using the mouse to click and then pull back at an angle. to view the ball, the screen will always be in the view but the movement of the ball can be seen by the click and drag of the mouse. pulling back the mouse will produce a line that shows the ball's trajectory up until the first obstacle.
+
+
+ You only have a certain amount of balls per level and if you lose that ball during that level to one of the traps then you get a new one as long as you have more balls. There is a tracker that is at the top with a number of balls. Like so: *** if you have 3 and * if you have 1.
 
 If you run out of balls you lose. The goal is to get through in the fewest strokes but also not losing your ball to the traps.
 
-With 2 players, its trying to beat it in the fewest strokes. Players take turns in 2 player mode. It is based not on how far you are in the hole but you always take turns until you both finish and get in the hole. There is a counter that adds up your total amount of strokes and balls. that counter is always there and there are 2 of them during multiplayer. 
+With 2 players, its trying to beat it in the fewest strokes. Players take turns in 2 player mode. It is based not on how far you are in the hole but you always take turns until you both finish and get in the hole. There is a counter that adds up your total amount of strokes and balls. that counter is always there and there are 2 of them during multiplayer.
 
 Magnets are traps  that pull your ball away from the hole and makes it stick to the magnet. If it get close enough to the magnet, the magnet will take the ball.
 
@@ -62,4 +65,4 @@ the number of balls and what hole your on
 
 7. The game must have one experimental feature
 
-The levels will be creative and different and increasingly hard. The creativity is in the designs of the holes.
+The levels will be creative and different and increasingly hard. The creativity is in the designs of the holes. for example, in levels that get harder, walls will open up in certain spots to allow the ball to come through. the ball will stay in the level but the user will have to hit the ball back into the game. Also, the hole will move at harder levels. this gives a more time based shot that is harder to hit. This will increase/decrease in speed and change directions to make farther levels harder. All of the experimental features can be coded in  the final 3 days of coding
