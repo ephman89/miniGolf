@@ -18,7 +18,6 @@ var COURSE = {
   initialized : false,
   hole : {
     image : new Image(),
-    d :
   },
   sandtraps : [],
   magnets : []
