@@ -27,8 +27,8 @@ var COURSE = {
 var BALL = {
   initialized : false,
   image : new Image(),
-  x : 0,  //x-coord
-  y : 0,  //y-coord
+  x : 300,  //x-coord
+  y : 150,  //y-coord
   d : 15, //diameter
   vx: 0,  //horizontal speed
   vy: 0   //vertical speed

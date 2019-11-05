@@ -6,4 +6,5 @@ function Start() {
   COURSE.initialized = true;
   BALL.image.src = "golfBall.png";
   renderBall(context);
+  renderHole(context);
 }

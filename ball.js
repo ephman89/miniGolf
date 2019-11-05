@@ -4,7 +4,7 @@ function renderBall(context){
   animateMovement(context);
 }
 function drawBall (context){
-  document.body.append(BALL);
+  context.fillRect(BALL.x,BALL.y,20,20);
 }
 
 
