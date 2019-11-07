@@ -20,19 +20,21 @@ function renderMagnets(context) {
 }
 
 function renderHole(context){
-  
-  context.fillRect(HOLE.w, HOLE.h,HOLE.xPos,HOLE.yPos);
+
+  context.fillRect(HOLE.xPos, HOLE.yPos,HOLE.h,HOLE.w);
+
   var img = new Image();
-  context.drawImage(img,HOLE.w,HOLE.h);
   img.src = 'flag.png';
+  context.drawImage(img,HOLE.xPos, HOLE.yPos,HOLE.h,HOLE.w);
 }
 
 function renderCourse(context) {
   if (COURSE.initialized) {
-    context.fillStyle = "#00ff00";
-    context.fillRect(0, 0, GAME.canvas.width, GAME.canvas.height);
-    renderSandtraps(context);
-    renderMagnets(context);
+    //context.fillStyle = "#00ff00";
+  //  context.fillRect(0, 0, GAME.canvas.width, GAME.canvas.height);
     renderHole(context);
+    //renderSandtraps(context);
+    //renderMagnets(context);
+
   }
 }

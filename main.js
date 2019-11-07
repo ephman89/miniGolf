@@ -5,6 +5,7 @@ function Start() {
   var context = canvas.getContext('2d');
   COURSE.initialized = true;
   BALL.image.src = "golfBall.png";
-  renderBall(context);
-  renderHole(context);
+  renderCourse(context);
+  // renderBall(context);
+  // renderHole(context);
 }

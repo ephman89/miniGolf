@@ -8,10 +8,10 @@ var GAME = {
 };
 
 var HOLE = {
-  xPos : 100,  //x-coord of hole/flag image
-  yPos : 100,  //y coord of hole/flag image
-  w : (342/2),
-  h : (638/2)
+  xPos : 0,  //x-coord of hole/flag image
+  yPos : 0,  //y coord of hole/flag image
+  w : 10,
+  h : 30
 };
 
 var COURSE = {
