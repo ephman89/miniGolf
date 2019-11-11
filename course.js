@@ -21,11 +21,11 @@ function renderMagnets(context) {
 
 function renderHole(context){
 
-  context.fillRect(HOLE.xPos, HOLE.yPos,HOLE.h,HOLE.w);
+  context.fillRect(HOLE.xPos, HOLE.yPos,HOLE.w,HOLE.h);
 
   var img = new Image();
   img.src = 'flag.png';
-  context.drawImage(img,HOLE.xPos, HOLE.yPos,HOLE.h,HOLE.w);
+  context.drawImage(img,HOLE.xPos, HOLE.yPos,HOLE.w,HOLE.h);
 }
 
 function renderCourse(context) {
