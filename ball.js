@@ -1,17 +1,17 @@
 function renderBall(context){
   BALL.initialized = true;
   drawBall(context);
-  animateMovement(context);
+
 }
 function drawBall (context){
   context.fillRect(BALL.x,BALL.y,20,20);
 }
 
 
-function animateMovement(context){
+function animateBallMovement(){
   document.addEventListener('click', printMousePos, true);
   function printMousePos(e) {
-    if (e.screenX >= BALL.x - 60 && e.screenX <= BALL.x + 60 && e.screenY >= BALL.y - 60 && e.screenY <=BALL.y + 60){
+    if (e.screenX >= BALL.x  - 50 && e.screenX <= BALL.x + 70 && e.clientY >= BALL.y - 50 && e.clientY <=BALL.y + 70){
       function handler(e) {
           e = e || window.event;
 
@@ -25,8 +25,10 @@ function animateMovement(context){
           }
 
           console.log(pageX, pageY);
-          // tells where the ball goes
-          makeBallGo(pageX,pageY);
+          // tells where the ball goes\
+          BALL.vx = (BALL.x  - pageX)/10;
+          BALL.vy = (BALL.y  - pageY)/10;
+
 
       }
 
@@ -38,20 +40,30 @@ function animateMovement(context){
     }
 
 }
+makeBallGo();
 }
 
-function makeBallGo (x,y){
-  var startX = BALL.x;
-  var startY = BALL.y;
+function makeBallGo (){
+  var amount = .05;
+  if (BALL.vx != 0 || BALL.vy != 0){
+     if (BALL.vx < .1 && BALL.vx > -.1){
+      GAME.started= false;
+    } else if (BALL.vx > 0){
+      BALL.vx -= amount;
+    } else {
+      BALL.vx += amount;
+    }
+    if (BALL.vy < .1 && BALL.vy > -.1){
+      GAME.started = false;
+    } else if (BALL.vy > 0){
+      BALL.vy -= amount;
+    } else {
+      BALL.vy += amount;
+    }
+}
 
-  BALL.x = x;
-  BALL.y = y;
+  BALL.x = BALL.x + BALL.vx;
 
-  BALL.vx = (BALL.x - startX)/5;
-  BALL.vy = (BALL.y - startY)/5;
-
-  
-
-
+  BALL.y = BALL.y + BALL.vy;
 
 }
