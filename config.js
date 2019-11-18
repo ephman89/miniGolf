@@ -7,11 +7,13 @@ var GAME = {
   level : 1
 };
 
+
+
 var HOLE = {
-  xPos : 0,  //x-coord of hole/flag image
-  yPos : 0,  //y coord of hole/flag image
-  w : 10,
-  h : 30
+  xPos : 50,  //x-coord of hole/flag image
+  yPos : 50,  //y coord of hole/flag image
+  w : 30,
+  h : 90
 };
 
 var COURSE = {
@@ -19,7 +21,9 @@ var COURSE = {
   hole : {
     image : new Image(),
   },
-  sandtraps : [],
+  sandtraps : {
+    image : new Image(),
+  },
   magnets : []
 };
 
