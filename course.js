@@ -30,11 +30,11 @@ function renderHole(context){
 
 function renderCourse(context) {
   if (COURSE.initialized) {
-    //context.fillStyle = "#00ff00";
-  //  context.fillRect(0, 0, GAME.canvas.width, GAME.canvas.height);
+    context.fillStyle = "#00ff00";
+    context.fillRect(0, 0, GAME.canvas.width, GAME.canvas.height);
     renderHole(context);
-    //renderSandtraps(context);
-    //renderMagnets(context);
+    renderSandtraps(context);
+    renderMagnets(context);
 
   }
 }
