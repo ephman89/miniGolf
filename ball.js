@@ -47,14 +47,16 @@ function makeBallGo (){
   var amount = .05;
   if (BALL.vx != 0 || BALL.vy != 0){
      if (BALL.vx < .1 && BALL.vx > -.1){
-      GAME.started= false;
+      BALL.vx = 0;
+      BALL.vy = 0;
     } else if (BALL.vx > 0){
       BALL.vx -= amount;
     } else {
       BALL.vx += amount;
     }
     if (BALL.vy < .1 && BALL.vy > -.1){
-      GAME.started = false;
+      BALL.vx = 0;
+      BALL.vy = 0;
     } else if (BALL.vy > 0){
       BALL.vy -= amount;
     } else {

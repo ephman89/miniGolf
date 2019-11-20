@@ -21,7 +21,9 @@ function renderMagnets(context) {
 
 function renderHole(context){
 
+
   context.fillRect(HOLE.xPos, HOLE.yPos,HOLE.w,HOLE.h);
+
 
   var img = new Image();
   img.src = 'flag.png';

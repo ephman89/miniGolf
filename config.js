@@ -10,8 +10,8 @@ var GAME = {
 
 
 var HOLE = {
-  xPos : 50,  //x-coord of hole/flag image
-  yPos : 50,  //y coord of hole/flag image
+  xPos : Math.random()*550,  //x-coord of hole/flag image
+  yPos : Math.random()*220,  //y coord of hole/flag image
   w : 30,
   h : 90
 };

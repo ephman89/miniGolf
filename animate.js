@@ -20,6 +20,9 @@ function runGame() {
       BALL.y = 100;
       GAME.level = GAME.level + 1;
     }
+
+
+    
   }
 
   else {
