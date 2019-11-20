@@ -25,6 +25,13 @@ function runGame() {
         y: Math.random()*250,
       });
     }
+    var magSan = Math.random()* 5;
+    for (var i = 0; i < magSan; i ++){
+      SANDTRAPS.push({
+        x: Math.random()*550,
+        y: Math.random()*250,
+      });
+    }
     renderCourse(context);
     renderBall(context);
 

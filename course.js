@@ -1,11 +1,11 @@
 function renderSandtraps(context) {
   //will draw the sandtraps on the screen
   //the sandtraps are objects stored in COURSE.sandtraps[]
-  // context.fillRect(COURSE.sandtraps[0].w,COURSE.sandtraps[0].h,COURSE.sandtraps[0].x,COURSE.sandtraps[0].y);
-  // var img = new Image();
-  // context.drawImage(img,COURSE.sandtraps.w,COURSE.sandtraps.h);
-  // img.src = 'sandtrap.png';
-  // COURSE.sandtraps.pop();
+  context.fillRect(SANDTRAPS[0].x,SANDTRAPS.y,40,20);
+  var img = new Image();
+  context.drawImage(img,40,20);
+  img.src = 'sandtrap.png';
+  COURSE.sandtraps.pop();
 }
 
 function renderMagnets(context) {

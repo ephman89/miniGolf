@@ -28,6 +28,7 @@ var COURSE = {
 };
 
 var MAGNETS = [];
+var SANDTRAPS = [];
 
 
 var BALL = {
