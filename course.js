@@ -1,22 +1,22 @@
 function renderSandtraps(context) {
   //will draw the sandtraps on the screen
   //the sandtraps are objects stored in COURSE.sandtraps[]
-  context.fillRect(COURSE.sandtraps[0].w,COURSE.sandtraps[0].h,COURSE.sandtraps[0].x,COURSE.sandtraps[0].y);
-  var img = new Image();
-  context.drawImage(img,COURSE.sandtraps.w,COURSE.sandtraps.h);
-  img.src = 'sandtrap.png';
-  COURSE.sandtraps.pop();
+  // context.fillRect(COURSE.sandtraps[0].w,COURSE.sandtraps[0].h,COURSE.sandtraps[0].x,COURSE.sandtraps[0].y);
+  // var img = new Image();
+  // context.drawImage(img,COURSE.sandtraps.w,COURSE.sandtraps.h);
+  // img.src = 'sandtrap.png';
+  // COURSE.sandtraps.pop();
 }
 
 function renderMagnets(context) {
   //will draw the magnets on the screen
   //the magnets are objects stored in COURSE.magnets[]
   //magents have position of where they should be
-  context.fillRect(30,30,COURSE.magnets[0],COURSE.magnets[0]);
+  context.fillRect(MAGNETS[0].x,MAGNETS[0].y,30,30);
   var img = new Image();
   context.drawImage(img,30,30);
   img.src = 'magnet.png';
-  COURSE.magnets.pop();
+  MAGNETS.pop();
 }
 
 function renderHole(context){

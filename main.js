@@ -8,8 +8,7 @@ function Start() {
   GAME.started = true;
   GAME.level = 1;
 
-  renderHole(context);
-  renderSandtraps(context);
+  runGame();
   context.font = "30px Arial";
   context.fillText(""+ GAME.level, 50, 20);
 }

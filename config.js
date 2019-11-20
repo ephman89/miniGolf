@@ -27,6 +27,8 @@ var COURSE = {
   magnets : []
 };
 
+var MAGNETS = [];
+
 
 var BALL = {
   initialized : false,

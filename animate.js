@@ -8,9 +8,7 @@ function runGame() {
     animateBallMovement();
 
     context.clearRect(0,0,600,300);
-    renderHole(context);
-    renderBall(context);
-    //renderCourse(context):
+
     if (
         BALL.x >= HOLE.xPos &&
         BALL.x <= (HOLE.xPos + HOLE.w) &&
@@ -20,9 +18,17 @@ function runGame() {
       BALL.y = 100;
       GAME.level = GAME.level + 1;
     }
+    var magRan = Math.random()* 5;
+    for (var i = 0; i < magRan; i ++){
+      MAGNETS.push({
+        x: Math.random()*550,
+        y: Math.random()*250,
+      });
+    }
+    renderCourse(context);
+    renderBall(context);
 
 
-    
   }
 
   else {
