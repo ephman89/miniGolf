@@ -16,24 +16,32 @@ function runGame() {
         BALL.y <= (HOLE.yPos + HOLE.h)){
       BALL.x = 100;
       BALL.y = 100;
+      BALL.vx = 0; 
+      BALL.vy = 0;
       GAME.level = GAME.level + 1;
     }
     var magRan = Math.random()* 5;
     for (var i = 0; i < magRan; i ++){
-      MAGNETS.push({
-        x: Math.random()*550,
-        y: Math.random()*250,
-      });
+      if (magRan == i){
+        MAGNETS.push({
+          x: Math.random()*550,
+          y: Math.random()*250,
+        });
+      }
     }
     var magSan = Math.random()* 5;
     for (var i = 0; i < magSan; i ++){
-      SANDTRAPS.push({
-        x: Math.random()*550,
-        y: Math.random()*250,
-      });
+      if (magSan == i){
+        SANDTRAPS.push({
+          x: Math.random()*550,
+          y: Math.random()*250,
+        });
+      }
     }
+
     renderCourse(context);
     renderBall(context);
+
 
 
   }

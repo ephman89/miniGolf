@@ -4,8 +4,8 @@ function renderSandtraps(context) {
   context.fillRect(SANDTRAPS[0].x,SANDTRAPS.y,40,20);
   var img = new Image();
   context.drawImage(img,40,20);
-  img.src = 'sandtrap.png';
-  COURSE.sandtraps.pop();
+  img.src = 'sandtrap.jpeg';
+  SANDTRAPS.pop();
 }
 
 function renderMagnets(context) {
@@ -32,8 +32,7 @@ function renderHole(context){
 
 function renderCourse(context) {
   if (COURSE.initialized) {
-    context.fillStyle = "#00ff00";
-    context.fillRect(0, 0, GAME.canvas.width, GAME.canvas.height);
+
     renderHole(context);
     renderSandtraps(context);
     renderMagnets(context);
