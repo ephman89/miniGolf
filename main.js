@@ -10,5 +10,5 @@ function Start() {
 
   runGame();
   context.font = "30px Arial";
-  context.fillText(""+ GAME.level, 50, 20);
+  context.fillText("Level:"+ GAME.level + " Strokes :" + BALL.strokes, 50, 20);
 }

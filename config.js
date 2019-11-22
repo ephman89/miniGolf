@@ -1,7 +1,7 @@
 var GAME = {
   canvas : {
-    width : 900,
-    height : 900
+    width : 600,
+    height : 300
   },
   started : true,
   level : 1
@@ -38,5 +38,6 @@ var BALL = {
   y : 150,  //y-coord
   d : 15, //diameter
   vx: 0,  //horizontal speed
-  vy: 0   //vertical speed
+  vy: 0,
+  strokes: 0  //vertical speed
 };

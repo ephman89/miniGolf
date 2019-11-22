@@ -49,6 +49,7 @@ function makeBallGo (){
      if (BALL.vx < .1 && BALL.vx > -.1){
       BALL.vx = 0;
       BALL.vy = 0;
+
     } else if (BALL.vx > 0){
       BALL.vx -= amount;
     } else {
@@ -57,12 +58,25 @@ function makeBallGo (){
     if (BALL.vy < .1 && BALL.vy > -.1){
       BALL.vx = 0;
       BALL.vy = 0;
+      BALL.strokes ++;
     } else if (BALL.vy > 0){
       BALL.vy -= amount;
     } else {
       BALL.vy += amount;
     }
 }
+  if (BALL.x + 15 > GAME.canvas.width){
+    BALL.vx = -BALL.vx;
+  }
+  if (BALL.x < 0){
+    BALL.vx = -BALL.vx;
+  }
+  if (BALL.y < 0){
+    BALL.vy = -BALL.vy;
+  }
+  if (BALL.y + 15 > GAME.canvas.height){
+    BALL.vy = -BALL.vy;
+  }
 
   BALL.x = BALL.x + BALL.vx;
 
