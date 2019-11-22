@@ -3,7 +3,8 @@ function runGame() {
   var canvas = document.getElementById('mainCanvas');
   var context = canvas.getContext('2d');
   if (GAME.started) {
-
+  var a;
+  var b;
     animateBallMovement();
 
     context.clearRect(0,0,600,300);
@@ -25,8 +26,22 @@ function runGame() {
       }
     }
 
-
-
+    for (var i = 0; i < GAME.level; i ++){
+      //if (magRan == i){
+        MAGNETS.push({
+          xm: a,
+          ym: b,
+        });
+      //}
+    }
+    for (var i = 0; i < GAME.level; i ++){
+      //if (magSan == i){
+        SANDTRAPS.push({
+          xs: a,
+          ys: b,
+        });
+    //  }
+    }
 
     renderCourse(context);
     renderBall(context);
