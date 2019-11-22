@@ -82,4 +82,23 @@ function makeBallGo (){
 
   BALL.y = BALL.y + BALL.vy;
 
+  for (magnets of MAGNETS){
+    if (
+        BALL.x >= magnets.xPos &&
+        BALL.x <= (magnets.xPos + 20) &&
+        BALL.y >= magnets.yPos &&
+        BALL.y <= (magnets.yPos + 20)){
+          BALL.balls --;
+    }
+  }
+  for (trap of SANDTRAPS){
+    if (
+        BALL.x >= trap.xPos &&
+        BALL.x <= (trap.xPos + 40) &&
+        BALL.y >= trap.yPos &&
+        BALL.y <= (trap.yPos + 40)){
+          BALL.vx = 0;
+          BALL.vy = 0;
+    }
+  }
 }

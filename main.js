@@ -9,6 +9,5 @@ function Start() {
   GAME.level = 1;
 
   runGame();
-  context.font = "30px Arial";
-  context.fillText("Level:"+ GAME.level + " Strokes :" + BALL.strokes, 50, 20);
+  
 }

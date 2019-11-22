@@ -19,29 +19,34 @@ function runGame() {
       BALL.vx = 0;
       BALL.vy = 0;
       GAME.level = GAME.level + 1;
+      HOLE.xPos = Math.random()*550;  //x-coord of hole/flag image
+      HOLE.yPos = Math.random()*220;
+      if (BALL.balls < 3){
+        BALL.balls ++;
+      }
     }
-    var magRan = Math.random()* 5;
-    for (var i = 0; i < magRan; i ++){
-      if (magRan == i){
+
+    for (var i = 0; i < GAME.level; i ++){
+      //if (magRan == i){
         MAGNETS.push({
           xm: a,
           ym: b,
         });
-      }
+      //}
     }
-    var magSan = Math.random()* 5;
-    for (var i = 0; i < magSan; i ++){
-      if (magSan == i){
+    for (var i = 0; i < GAME.level; i ++){
+      //if (magSan == i){
         SANDTRAPS.push({
           xs: a,
           ys: b,
         });
-      }
+    //  }
     }
 
     renderCourse(context);
     renderBall(context);
-
+    context.font = "30px Arial";
+    context.fillText("Level:"+ GAME.level + " Strokes :" + BALL.strokes + " Balls: " + BALL.balls, 50, 20);
 
 
   }
