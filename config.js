@@ -39,6 +39,5 @@ var BALL = {
   d : 15, //diameter
   vx: 0,  //horizontal speed
   vy: 0,
-  strokes: 0,
-  balls: 3 //vertical speed
+  strokes: 0  //vertical speed
 };

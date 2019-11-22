@@ -3,8 +3,7 @@ function runGame() {
   var canvas = document.getElementById('mainCanvas');
   var context = canvas.getContext('2d');
   if (GAME.started) {
-  var a;
-  var b;
+
     animateBallMovement();
 
     context.clearRect(0,0,600,300);
