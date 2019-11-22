@@ -24,8 +24,32 @@ function runGame() {
       if (BALL.balls < 3){
         BALL.balls ++;
       }
+      for (var i = 0; i < GAME.level; i ++){
+        //if (magRan == i){
+          MAGNETS.push({
+            xm: 0,
+            ym: 0,
+          });
+        //}
+      }
+      for (var i = 0; i < GAME.level; i ++){
+        //if (magSan == i){
+          SANDTRAPS.push({
+            xs: 0,
+            ys: 0,
+          });
+      //  }
+      }
     }
-
+    
+    SANDTRAPS.push({
+      xs: 0,
+      ys: 0,
+    });
+    MAGNETS.push({
+      xm: 0,
+      ym: 0,
+    })
 
 
 

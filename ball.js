@@ -101,4 +101,8 @@ function makeBallGo (){
             BALL.vy = 0;
       }
     }
+
+    if (BALL.balls < 0){
+      GAME.started = false;
+    }
 }
