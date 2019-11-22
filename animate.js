@@ -26,22 +26,8 @@ function runGame() {
       }
     }
 
-    for (var i = 0; i < GAME.level; i ++){
-      //if (magRan == i){
-        MAGNETS.push({
-          xm: a,
-          ym: b,
-        });
-      //}
-    }
-    for (var i = 0; i < GAME.level; i ++){
-      //if (magSan == i){
-        SANDTRAPS.push({
-          xs: a,
-          ys: b,
-        });
-    //  }
-    }
+
+
 
     renderCourse(context);
     renderBall(context);

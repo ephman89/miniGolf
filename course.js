@@ -38,8 +38,8 @@ function renderCourse(context) {
   if (COURSE.initialized) {
 
     renderHole(context);
-  //  renderSandtraps(context);
-  //  renderMagnets(context);
+    renderSandtraps(context);
+    renderMagnets(context);
 
   }
 }
